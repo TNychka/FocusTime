@@ -1,17 +1,18 @@
-
-.test {
-    color: blue;
-    height: 1000px;
-}
-
 html {
     overflow: hidden;
 }
 
-a {
-    
+body {
+    background-color: RGB(49, 60, 116);
 }
 
-body {
-    padding-top: 50px;
+#Jumbotron-header {
+    text-align: center;
 }
+
+.jumbotron {
+    height: 700px;
+    background-image: url("http://i3.kym-cdn.com/photos/images/facebook/000/862/065/0e9.jpg")
+}
+
+
