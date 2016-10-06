@@ -1,8 +1,9 @@
 html {
-    overflow: hidden;
+    overflow: scroll;
 }
 
 body {
+    height: 1000px;
     background-color: RGB(49, 60, 116);
 }
 
@@ -11,8 +12,17 @@ body {
 }
 
 .jumbotron {
-    height: 700px;
     background-image: url("http://i3.kym-cdn.com/photos/images/facebook/000/862/065/0e9.jpg")
 }
 
+#about {
+    background-color: azure;
+    height: 500px;
+}
 
+#about about-subsection {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: ivory !important;
+    
+}
