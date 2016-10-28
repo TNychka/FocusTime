@@ -7,22 +7,27 @@ body {
     background-color: RGB(49, 60, 116);
 }
 
-#Jumbotron-header {
-    text-align: center;
-}
-
 .jumbotron {
     background-image: url("http://i3.kym-cdn.com/photos/images/facebook/000/862/065/0e9.jpg")
 }
 
+.container {
+    width: 100%
+}
+
+#Jumbotron-header {
+    text-align: center;
+}
+
 #about {
     background-color: azure;
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
     height: 500px;
 }
 
-#about about-subsection {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: ivory !important;
-    
+#about-subsection {
+   background-color: lightgray;
 }
+
