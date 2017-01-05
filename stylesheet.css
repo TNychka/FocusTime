@@ -1,26 +1,60 @@
 html {
-    overflow: scroll;
 }
 
 body {
-    height: 1000px;
+    height: 100%;
+    overflow: auto;
     background-color: RGB(49, 60, 116);
-}
+    
+    background-image: url(lib/matrix_code_by_phi_au.jpg);
+    background-attachment: fixed;
 
-.jumbotron {
-    background-image: url("http://i3.kym-cdn.com/photos/images/facebook/000/862/065/0e9.jpg")
 }
 
 .container {
     width: 100%;
-    margin: 10px;
+}
+
+.spacer {
+    width: 100%;
+    height: 95px;
+}
+
+.parallax {
+    height: 500px;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+}
+
+.jumbotron {
+    background-color: darkblue;
+}
+
+.info {
+   background-color: lightgray;
 }
 
 #Jumbotron-header {
     text-align: center;
 }
 
-.info {
-   background-color: lightgray;
+#About-para {
+    background-image: url(lib/code.jpg);
+}
+
+#Resume-para {
+    background-image: url(lib/codecode.jpg);
+}
+
+#Projects-para {
+    background-image: url(lib/lines-of-code.jpg);
 }
 
