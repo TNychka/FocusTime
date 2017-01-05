@@ -12,22 +12,15 @@ body {
 }
 
 .container {
-    width: 100%
+    width: 100%;
+    margin: 10px;
 }
 
 #Jumbotron-header {
     text-align: center;
 }
 
-#about {
-    background-color: azure;
-    vertical-align: middle;
-    text-align: center;
-    padding: 20px;
-    height: 500px;
-}
-
-#about-subsection {
+.info {
    background-color: lightgray;
 }
 
