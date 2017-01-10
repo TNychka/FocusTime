@@ -22,7 +22,6 @@ body {
 
 .parallax {
     height: 500px;
-    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,6 +39,7 @@ body {
 
 .info {
    background-color: lightgray;
+    text-align: center;
 }
 
 #Jumbotron-header {
@@ -58,3 +58,10 @@ body {
     background-image: url(lib/lines-of-code.jpg);
 }
 
+#About-list {
+    padding-left: 0; 
+}
+
+#About-links {
+    list-style-position: inside;
+}
