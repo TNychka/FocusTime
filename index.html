@@ -8,16 +8,19 @@
 
         <link rel="stylesheet" href="stylesheet.css">
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <script type="text/javascript" src = "smoothScroll.js"></script>
     </head>
     <body>
         <!--Navbar-->
         <nav class="navbar navbar-inverse navbar-fixed-top" >
             <div class="container-fluid">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Resume">Resume</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -27,7 +30,7 @@
         </div>
         
         <!--jumbotron-->
-        <div class="jumbotron">
+        <div id="top" class="jumbotron">
             <h1 id="Jumbotron-header">Nychka's Rendition of a Project Exhibition</h1>
             <p id="Jumbotron-header">I like programming</p>
         </div>
@@ -46,9 +49,7 @@
                     <ul id="About-list">
                         <li id="About-links"><a href="https://github.com/TNychka">Github</a></li>
                         <li id="About-links"><a href="https://ca.linkedin.com/in/tylernychka">LinkedIn</a></li>
-                        <li id="About-links"><a href="https://i.ytimg.com/vi/sfA0tZgtSeg/maxresdefault.jpg">My personal website</a></li>
 <!--                       TODO Add a recursion end point here for the lols-->
-                    </ul>  
                 </div>
             </div>
         </div>
