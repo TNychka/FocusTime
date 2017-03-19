@@ -1,18 +1,16 @@
-html {
-}
-
 body {
     height: 100%;
     overflow: auto;
-    background-color: RGB(49, 60, 116);
-    
-    background-image: url(lib/matrix_code_by_phi_au.jpg);
-    background-attachment: fixed;
-
+    background-color: RGB(16, 38, 102);
 }
 
 .container {
-    width: 100%;
+    width: 90%;
+    min-width: 400px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 2em;
 }
 
 .spacer {
@@ -33,35 +31,49 @@ body {
     top: 0;
 }
 
-.jumbotron {
-    background-color: darkblue;
-}
-
 .info {
-   background-color: lightgray;
+    background-color: lightgray;
     text-align: center;
 }
 
-#Jumbotron-header {
-    text-align: center;
+#title-container {
+    display: flex;
+    justify-content: center;
 }
 
-#About-para {
-    background-image: url(lib/code.jpg);
+#title-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
 
-#Resume-para {
-    background-image: url(lib/codecode.jpg);
+.info-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#Projects-para {
-    background-image: url(lib/lines-of-code.jpg);
+.info-link {
+    margin: 10px;
 }
 
-#About-list {
-    padding-left: 0; 
-}
+#project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-#About-links {
-    list-style-position: inside;
+}
+.project {
+    width: 300px;
+    height: 400px;
+    background-color: snow;
+    margin: 20px;
 }
