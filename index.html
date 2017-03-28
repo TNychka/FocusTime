@@ -1,89 +1,112 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Nychka's Rendition of a Project Exhibition</title>
-        <link rel="icon" href="/lib/gear-md.png">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full Stack</title>
+    <link rel="icon" href="/lib/gear-md.png">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="stylesheet.css">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        
-        <script type="text/javascript" src = "smoothScroll.js"></script>
-    </head>
-    <body>
-        <!--Navbar-->
-        <nav class="navbar navbar-inverse navbar-fixed-top" >
-            <div class="container-fluid">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Resume">Resume</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        
-        <!--Spacer-->
-        <div class="spacer">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="smoothScroll.js"></script>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Resume">Resume</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="title-container">
+    <div id="title-content">
+        <h2>Tyler Nychka</h2>
+        <h1>Full Stack Developer</h1>
+    </div>
+</div>
+
+<!--about-->
+<div id="About" class="info container">
+    <h2>Tyler Nychka</h2>
+    <div>
+        <p>Give me a cup of tea, point me towards a keyboard; I'll give you code.</p>
+        <p>I am an undergrad of Software Engineering at the University of Waterloo, I spend most of my time programming.
+        <p>If you're curious as to what I've done, feel free to look at my projects.</p>
+        <div class="about-links">
+            <a class="about-link" href="https://github.com/TNychka"><img src="lib/GitHub-Mark-64px.png"
+                                                                         style="width: 3em; height: 3em"></a>
+            <a class="about-link" href="https://ca.linkedin.com/in/tylernychka"><img src="lib/linkedin-xxl.png"
+                                                                                     style="width: 3em; height: 3em"></a>
         </div>
-        
-        <!--jumbotron-->
-        <div id="top" class="jumbotron">
-            <h1 id="Jumbotron-header">Nychka's Rendition of a Project Exhibition</h1>
-            <p id="Jumbotron-header">I like programming</p>
-        </div>
-        
-        <!--Spacer-->
-        <div class="spacer">
-        </div>
-        
-        <!--about-->
-        <div id="About" class="info container">
-            <h2>About Me</h2>
-            <div>
-                <p>As undergrad of Software Engineering at the University of Waterloo, I spend most of my time programming. As you can see from my various projects, I love to get involved and learn cool new technologies!</p>
-                <p> If you're curious as to what I've done; feel free to look at my</p>
-                <div>
-                    <ul id="About-list">
-                        <li id="About-links"><a href="https://github.com/TNychka">Github</a></li>
-                        <li id="About-links"><a href="https://ca.linkedin.com/in/tylernychka">LinkedIn</a></li>
-<!--                       TODO Add a recursion end point here for the lols-->
+    </div>
+</div>
+
+<!--Spacer-->
+<div class="spacer">
+</div>
+
+<div id="Projects" class="info container">
+    <h2>Projects</h2>
+    <div>
+        <p>All of these and more are available on github</p>
+        <a class="info-link" href="https://github.com/TNychka"><img src="lib/GitHub-Mark-64px.png"
+                                                                    style="width: 3em; height: 3em"></a>
+        <div id="project-container">
+            <!--Focus Time-->
+            <a href="http://tnychka.github.io" target="_blank">
+                <div class="project">
+                    <div class="project-title">
+                        <h4>Focus Time</h4>
+                    </div>
+                    <img class="project-image" src="lib/tnychkaio.png">
+                    <p>Focus Time: Create a more efficient work session!</p>
                 </div>
-            </div>
-        </div>
+            </a>
 
-        <div id="About-para" class="parallax">
         </div>
+    </div>
+</div>
 
-        <div id="Resume" class="info container">
-            <h2>Resume</h2>
-            <div>
-                <p>Do you want to see my resume? Of course you do.</p>
-<!--                TODO add resume endpoint-->
-                <a href="https://ca.linkedin.com/in/tylernychka">You can find it here</a>
-            </div>
-        </div>
+<!--Spacer-->
+<div class="spacer">
+</div>
 
-        <div id="Resume-para" class="parallax">
-        </div>
-        
-        <div id="Projects" class="info container">
-            <h2>Projects</h2>
-            <div>
-                <p>Look what I did</p>
-            </div>
-        </div>
+<div id="Resume" class="info container">
+    <h2>Resume and Contact Information</h2>
+    <div>
+        <p>If you want to see more, my resume is available.</p>
+        <a href="lib/hostedResume.pdf">Tyler Nychka</a>
+        <p></p>
+        <p>Or if you prefer, my linkedin is here.</p>
+        <a class="info-link" href="https://ca.linkedin.com/in/tylernychka"><img src="lib/linkedin-xxl.png"
+                                                                                style="width: 3em; height: 3em"></a>
+        <p></p>
+    </div>
+</div>
 
-        <div id="Projects-para" class="parallax">
-        </div>
-        
-        <div id="Contact" class="info container">
-            <h2>Contact</h2>
-            <div>
-                <p>Talk to me baby</p>
-            </div>
-        </div>
-    </body>
+<!--Spacer-->
+<div class="spacer">
+</div>
+
+<div id="Contact" class="info container">
+    <div>
+        <p>Interested? Contact me</p>
+        <a href="mailto:tdnychka@uwaterloo.ca">Tdnychka@uwaterloo.ca</a> or
+        <a class="info-link" href="https://ca.linkedin.com/in/tylernychka">Linked In</a>
+    </div>
+</div>
+
+<!--Spacer-->
+<div class="spacer">
+</div>
+
+</body>
 </html>
