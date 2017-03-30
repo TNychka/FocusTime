@@ -1,6 +1,14 @@
 
 .project:hover {
+    -webkit-animation: pulsate-fwd 0.5s ease-in-out forwards;
+    -moz-animation: pulsate-fwd 0.5s ease-in-out forwards;
+    animation: pulsate-fwd 0.5s ease-in-out forwards;
+}
 
+.project:not(:hover) {
+    -webkit-animation: pulsate-bck 0.5s ease-in-out backwards;
+    -moz-animation: pulsate-bck 0.5s ease-in-out backwards;
+    animation: pulsate-bck 0.5s ease-in-out backwards;
 }
 
 .project-title {
@@ -9,4 +17,271 @@
     border-color: gray;
     border-width: 2px;
 }
-
+
+.project-title > h6 {
+    width: inherit;
+}
+
+.project > p {
+    padding: 20px;
+}
+
+
+#title-content > h2 {
+    animation-duration: 1s;
+    animation-name: text-shadow-pop-top;
+    animation-fill-mode: forwards;
+}
+
+#title-content > h1 {
+    animation-duration: 1s;
+    animation-name: text-shadow-pop-top;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes text-shadow-pop-top {
+    0% {
+        text-shadow: 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        text-shadow: 0 -1px grey, 0 -2px grey, 0 -3px grey, 0 -4px grey, 0 -5px grey, 0 -6px grey, 0 -7px grey, 0 -8px grey;
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+@keyframes text-shadow-pop-top {
+    0% {
+        text-shadow: 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        text-shadow: 0 -1px grey, 0 -2px grey, 0 -3px grey, 0 -4px grey, 0 -5px grey, 0 -6px grey, 0 -7px grey, 0 -8px grey;
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation text-pop-up-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-pop-up-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+@keyframes text-pop-up-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+.project-title > h6 {
+    width: inherit;
+}
+
+.project > p {
+    padding: 20px;
+}
+
+
+#title-content > h2 {
+    animation-duration: 2s;
+    animation-name: slide-in-bck-center;
+    animation-fill-mode: forwards;
+}
+
+#title-content > h1 {
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-name: slide-in-bck-center;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes text-shadow-pop-top {
+    0% {
+        text-shadow: 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        text-shadow: 0 -1px grey, 0 -2px grey, 0 -3px grey, 0 -4px grey, 0 -5px grey, 0 -6px grey, 0 -7px grey, 0 -8px grey;
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+@keyframes text-shadow-pop-top {
+    0% {
+        text-shadow: 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        text-shadow: 0 -1px grey, 0 -2px grey, 0 -3px grey, 0 -4px grey, 0 -5px grey, 0 -6px grey, 0 -7px grey, 0 -8px grey;
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation text-pop-up-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-pop-up-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+@keyframes text-pop-up-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2017-3-29 21:25:34
+ * http://animista.net
+ * T: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bck-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-bck-center {
+    0% {
+        -webkit-transform: translateZ(700px);
+        transform: translateZ(700px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(1);
+        transform: translateZ(1);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bck-center {
+    0% {
+        -webkit-transform: translateZ(700px);
+        transform: translateZ(700px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(1);
+        transform: translateZ(1);
+        opacity: 1;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2017-3-29 21:41:31
+ * http://animista.net
+ * T: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2017-3-29 21:47:50
+ * http://animista.net
+ * T: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation pulsate-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes pulsate-bck {
+    0% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
