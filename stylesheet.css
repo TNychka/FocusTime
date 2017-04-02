@@ -10,6 +10,10 @@ h1 {
     font-size: 5em;
 }
 
+p {
+    font-size: 1em;
+}
+
 .navbar a {
     position: absolute;
     color: whitesmoke;
@@ -50,6 +54,8 @@ h1 {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+    margin-top: 5em;
+    margin-bottom: 5em;
     padding-top: 2em;
     padding-right: 2em;
     padding-left: 2em;
@@ -83,7 +89,7 @@ h1 {
     margin: 20px;
 }
 
-#project-container {
+.project-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -91,19 +97,13 @@ h1 {
 }
 
 .project {
-    width: 300px;
-    height: 400px;
-    background-color: snow;
+    width: 350px;
+    height: 475px;
+    background-color: whitesmoke;
     margin: 20px;
     border-radius: 3px;
     text-decoration: none;
     color: RGB(23, 24, 26)
-}
-
-.project:hover {
-    background-color: RGB(23, 24, 26);
-    color: snow;
-    text-decoration: none;
 }
 
 .project-image {
@@ -113,8 +113,26 @@ h1 {
     height: 250px;
 }
 
+.project-title {
+    background-color: white;
+    border-bottom: solid;
+    border-color: gray;
+    border-width: 2px;
+}
+
+
 .project-title > h4 {
     padding-top: 20px;
+    margin: 20px;
     width: inherit;
+    line-break: auto;
     font-size: 2em;
+}
+
+.project-title > h6 {
+    width: inherit;
+}
+
+.project > p {
+    padding: 20px;
 }
