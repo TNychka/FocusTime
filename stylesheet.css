@@ -89,7 +89,7 @@ p {
     margin: 20px;
 }
 
-#project-container {
+.project-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
