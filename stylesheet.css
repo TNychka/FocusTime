@@ -99,17 +99,11 @@ p {
 .project {
     width: 350px;
     height: 475px;
-    background-color: snow;
+    background-color: whitesmoke;
     margin: 20px;
     border-radius: 3px;
     text-decoration: none;
     color: RGB(23, 24, 26)
-}
-
-.project:hover {
-    background-color: RGB(23, 24, 26);
-    color: snow;
-    text-decoration: none;
 }
 
 .project-image {
@@ -119,6 +113,14 @@ p {
     height: 250px;
 }
 
+.project-title {
+    background-color: white;
+    border-bottom: solid;
+    border-color: gray;
+    border-width: 2px;
+}
+
+
 .project-title > h4 {
     padding-top: 20px;
     margin: 20px;
@@ -126,6 +128,7 @@ p {
     line-break: auto;
     font-size: 2em;
 }
+
 .project-title > h6 {
     width: inherit;
 }
