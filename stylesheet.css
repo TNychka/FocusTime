@@ -1,21 +1,125 @@
-
-.project:hover {
-    -webkit-animation: pulsate-fwd 0.5s ease-in-out forwards;
-    -moz-animation: pulsate-fwd 0.5s ease-in-out forwards;
-    animation: pulsate-fwd 0.5s ease-in-out forwards;
+body {
+    height: 100%;
+    min-width: 405px;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: RGB(23, 24, 26);
 }
 
-.project:not(:hover) {
-    -webkit-animation: pulsate-bck 0.5s ease-in-out backwards;
-    -moz-animation: pulsate-bck 0.5s ease-in-out backwards;
-    animation: pulsate-bck 0.5s ease-in-out backwards;
+h1 {
+    font-size: 5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.navbar a {
+    position: absolute;
+    color: whitesmoke;
+}
+
+.navbar a:hover {
+    background-color: whitesmoke;
+    color: RGB(23, 24, 26);
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.container {
+    width: 90%;
+    min-width: 400px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 2em;
+}
+
+#title-container {
+    display: flex;
+    justify-content: center;
+    height: 97vh;
+}
+
+#title-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 200px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.info {
+    background-color: lightgray;
+    text-align: center;
+}
+
+.spacer {
+    height: 95px;
+}
+
+.parallax {
+    height: 500px;
+    background: no-repeat fixed center;
+    background-size: cover;
+}
+
+.about-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-link {
+    margin: 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 350px;
+    height: 475px;
+    background-color: whitesmoke;
+    margin: 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: RGB(23, 24, 26)
+}
+
+.project-image {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
 }
 
 .project-title {
     background-color: white;
-    border-bottom: solid;
-    border-color: gray;
-    border-width: 2px;
+    border: 2px gray;
+    border-bottom-style: solid;
+}
+
+.project-title > h4 {
+    padding-top: 20px;
+    margin: 20px;
+    width: inherit;
+    line-break: auto;
+    font-size: 2em;
 }
 
 .project-title > h6 {
@@ -23,103 +127,19 @@
 }
 
 .project > p {
-    padding: 20px;
+    padding: 15px;
 }
-
 
 #title-content > h2 {
     animation-duration: 1s;
-    animation-name: text-shadow-pop-top;
-    animation-fill-mode: forwards;
-}
-
-#title-content > h1 {
-    animation-duration: 1s;
-    animation-name: text-shadow-pop-top;
-    animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes text-shadow-pop-top {
-    0% {
-        text-shadow: 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        text-shadow: 0 -1px grey, 0 -2px grey, 0 -3px grey, 0 -4px grey, 0 -5px grey, 0 -6px grey, 0 -7px grey, 0 -8px grey;
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
-    }
-}
-@keyframes text-shadow-pop-top {
-    0% {
-        text-shadow: 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey, 0 0 grey;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        text-shadow: 0 -1px grey, 0 -2px grey, 0 -3px grey, 0 -4px grey, 0 -5px grey, 0 -6px grey, 0 -7px grey, 0 -8px grey;
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
-    }
-}
-
-/**
- * ----------------------------------------
- * animation text-pop-up-bottom
- * ----------------------------------------
- */
-@-webkit-keyframes text-pop-up-bottom {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        text-shadow: none;
-    }
-    100% {
-        -webkit-transform: translateY(50px);
-        transform: translateY(50px);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-    }
-}
-@keyframes text-pop-up-bottom {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        text-shadow: none;
-    }
-    100% {
-        -webkit-transform: translateY(50px);
-        transform: translateY(50px);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-    }
-}
-.project-title > h6 {
-    width: inherit;
-}
-
-.project > p {
-    padding: 20px;
-}
-
-
-#title-content > h2 {
-    animation-duration: 2s;
     animation-name: slide-in-bck-center;
     animation-fill-mode: forwards;
 }
 
 #title-content > h1 {
     opacity: 0;
+    animation-duration: 2s;
     animation-delay: 1s;
-    animation-duration: 3s;
     animation-name: slide-in-bck-center;
     animation-fill-mode: forwards;
 }
@@ -149,11 +169,6 @@
     }
 }
 
-/**
- * ----------------------------------------
- * animation text-pop-up-bottom
- * ----------------------------------------
- */
 @-webkit-keyframes text-pop-up-bottom {
     0% {
         -webkit-transform: translateY(0);
@@ -220,68 +235,5 @@
         -webkit-transform: translateZ(1);
         transform: translateZ(1);
         opacity: 1;
-    }
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2017-3-29 21:41:31
- * http://animista.net
- * T: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation pulsate-fwd
- * ----------------------------------------
- */
-@-webkit-keyframes pulsate-fwd {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    100% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-}
-@keyframes pulsate-fwd {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    100% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-}
-/* ----------------------------------------------
- * Generated by Animista on 2017-3-29 21:47:50
- * http://animista.net
- * T: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation pulsate-bck
- * ----------------------------------------
- */
-@-webkit-keyframes pulsate-bck {
-    0% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-@keyframes pulsate-bck {
-    0% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
     }
 }
