@@ -59,6 +59,10 @@ p {
     border-radius: 2px;
 }
 
+#title-content > h1, #title-content > h2 {
+    text-align: center;
+}
+
 .info {
     background-color: lightgray;
     text-align: center;
