@@ -68,16 +68,6 @@ p {
     text-align: center;
 }
 
-.spacer {
-    height: 95px;
-}
-
-.parallax {
-    height: 500px;
-    background: no-repeat fixed center;
-    background-size: cover;
-}
-
 .about-links {
     display: flex;
     justify-content: center;
