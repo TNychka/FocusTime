@@ -1,4 +1,7 @@
 function activateCheats() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 2000);
     
     alert("cheats activated");
 }
