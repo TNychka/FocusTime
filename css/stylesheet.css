@@ -39,6 +39,17 @@ p {
     padding: 2em;
 }
 
+#wrapper {
+  text-align: center;
+  display: none;
+  height: 97vh
+}
+
+canvas {
+  text-align: center;
+  width: 100%;
+}
+
 #title-container {
     display: flex;
     justify-content: center;
@@ -230,4 +241,7 @@ p {
         transform: translateZ(1);
         opacity: 1;
     }
+}
+#space {
+    height: 100px;
 }
