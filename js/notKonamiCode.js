@@ -17,7 +17,7 @@ function glitch(element, text) {
     initOptions: function () {
       this.width = document.documentElement.offsetWidth;
       this.textSize = Math.floor(this.width / 7);
-      this.height = this.textSize + 10;
+      this.height = this.textSize + 50;
 
       // sets text size based on window size
       if (this.textSize > this.height) {
