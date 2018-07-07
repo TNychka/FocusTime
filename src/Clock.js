@@ -101,11 +101,13 @@ function update() {
         ctx.clearRect(0,0,370,370);
       }
       alarm.play();
+    } else if (clock.clock == clock.currentSessionTime && (clock.currentSessionState==sessionEnum.BREAK || clock.currentSessionState==sessionEnum.REWARD)) {
+      ctx.clearRect(0,0,370,370);
     } else {
-      ctx.putImageData(imd,0,0);
-      ctx.beginPath();
-      ctx.arc(185, 185, 170, -(quart), ((circ) * clock.fractionTimeRemaining) - quart, false);
-      ctx.stroke();
+        ctx.putImageData(imd,0,0);
+        ctx.beginPath();
+        ctx.arc(185, 185, 170, -(quart), ((circ) * clock.fractionTimeRemaining) - quart, false);
+        ctx.stroke();
     }
   }
 

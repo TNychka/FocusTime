@@ -10,13 +10,14 @@ body{
 }
 
 .page-header{
-	position: static;
+    position: static;
+    display: inline-block;
 	text-align: center;
     width: 100%;
 }
 
 .page-header h1{
-    display: inline-block;
+    display: inline;
     border-bottom: 3px solid;
 }
 
